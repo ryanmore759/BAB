@@ -14,7 +14,8 @@
 	<link href="https://unpkg.com/purecss@1.0.0/build/pure-min.css" rel="stylesheet">
 	<link rel="shortcut icon" href="/static/favicon.ico" type="image/x-icon">
 	<link href="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.4.3/css/foundation-float.min.css" rel="stylesheet">
-	<link href='css/styles.css' rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:800i" rel="stylesheet">
+  <link href='css/styles.css' rel="stylesheet" type="text/css">
 	<style>
 	   header{
 	       background-color:#4c4c4c;
@@ -33,8 +34,9 @@
 	     }
 	   h1 {
 	     color: #1779ba;
-	     font-family: verdana;
-	     font-size: 300%;
+	     font-family: Montserrat;
+       font-size: 300%;
+       text-shadow: 3px 3px 3px rgb(197, 197, 197);
 	     }
 	</style>
 </head>
@@ -44,7 +46,7 @@
 	</header><br>
 	<div align="center" class="form-wrapper">
     <nav class="header">
-			<h1 class="title"><a href="/blog">BLOG</a></h1> &#9686 <a class="left" href="/post">New Post</a> &#9687 &#9686 <a class="right" href="/blog?sort=oldest">Oldest</a> &#9687 &#9686 <a class="right newest" href="/blog?sort=newest">Newest</a> &#9687 
+			<h1 class="title"><a href="/blog">BLOG</a></h1> <text style=color:#cd6772;>&#9686</style> <a class="left" href="/post">New Post</a> &#9687 &#9686 <a class="right" href="/blog?sort=oldest">Oldest</a> &#9687 &#9686 <a class="right newest" href="/blog?sort=newest">Newest</a> &#9687 
 			<hr style="width:60%">
 			<hr>
 		</nav>{% block content %} {% endblock %}
