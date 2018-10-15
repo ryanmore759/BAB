@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	{% extends "base.html" %} {% block content %}
+	<div class="row">
+		{% if blogs|length == 0 %}
+		<p>No Content. Go to <a href="/post">New Post</a> to add an Entry</p>{% endif %} {% for blog in blogs %}
+		<h1><a href="/blog?id={{blog.id}}">{{blog.title}}</a></h1>
+		<p>{{blog.body}}</p>
+		<p class="pub-date">Post Date: {{date_posted}}</p>{% endfor %}
+	</div>{% endblock %}
+</body>
+</html>
